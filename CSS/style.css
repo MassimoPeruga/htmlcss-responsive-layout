@@ -111,12 +111,38 @@ header .contenitore {
     align-items: flex-end;
 }
 
-#planning .colonna {
+.colonna {
     margin: 0 2rem;
     width: 100%;
 }
 
 /*    Section Planning */
+
+/* ==========================
+   Section Testimonials
+   ========================== */
+#testimonials {
+    padding-top: 5.3125rem;
+    padding-bottom: 5rem;
+}
+
+.row {
+    background-color: var(--viola);
+    margin: 2rem 0;
+    padding: 1.875rem 1rem;
+    gap: 4rem;
+}
+
+.col-left {
+    width: 12.5rem;
+}
+
+.col-right {
+    width: calc(100% - 16.5rem);
+}
+
+/*    Section Testimonials */
+
 /* Contenuto Principale */
 
 /* ==========================
@@ -156,6 +182,18 @@ header .contenitore {
     }
 
     /*    Section Planning */
+    /* ==========================
+               Section Testimonials
+               ========================== */
+    .row.flex {
+        gap: 2rem;
+    }
+
+    .col-right {
+        width: calc(100% - 14.5rem);
+    }
+
+    /*    Section Testimonials */
     /* Contenuto Principale */
 }
 
@@ -169,6 +207,20 @@ header .contenitore {
     }
 
     /* Section demo */
+    /* ==========================
+       Section Testimonials
+       ========================== */
+    .row.flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5625rem;
+    }
+
+    .col-right {
+        width: 100%;
+    }
+
+    /*    Section Testimonials */
 }
 
 /* Stili per layout responsivi a diverse dimensioni dello schermo */
