@@ -14,7 +14,7 @@
    ========================== */
 .debug {
     background-color: greenyellow;
-    height: 50px;
+    height: 100px;
     border: 1px solid black;
 }
 
@@ -26,6 +26,7 @@
 :root {
     --blue: #0084fd;
     --lightblue: #b5ddff;
+    --viola: #9792e4;
     --spaziatura: 1.5625rem;
     --spaziatura-grande: calc(var(--spaziatura) * 2);
     --larghezza: calc((100% - var(--spaziatura-grande)) / 3);
@@ -33,8 +34,8 @@
 
 .contenitore {
     width: 100%;
-    max-width: calc(1140px + var(--spaziatura) * 2);
-    padding: 0 var(--spaziatura);
+    max-width: calc(1140px + 2rem * 2);
+    padding: 0 2rem;
     margin: 0 auto;
 }
 
@@ -96,6 +97,26 @@ header .contenitore {
 }
 
 /*    Section demo */
+
+/* ==========================
+   Section Planning
+   ========================== */
+#planning {
+    background-color: var(--viola);
+    padding-top: 8.4375rem;
+    padding-bottom: 4.3125rem;
+}
+
+#planning .flex {
+    align-items: flex-end;
+}
+
+#planning .colonna {
+    margin: 0 2rem;
+    width: 100%;
+}
+
+/*    Section Planning */
 /* Contenuto Principale */
 
 /* ==========================
@@ -120,6 +141,22 @@ header .contenitore {
     }
 
     /* Header */
+    /* ==========================
+       Contenuto Principale
+       ========================== */
+    /* ==========================
+       Section Planning
+       ========================== */
+    #planning .flex {
+        flex-wrap: wrap;
+    }
+
+    #planning .colonna {
+        margin: 0;
+    }
+
+    /*    Section Planning */
+    /* Contenuto Principale */
 }
 
 @media screen and (max-width: 425px) {
