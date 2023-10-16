@@ -41,6 +41,8 @@
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* Utility */
@@ -52,9 +54,8 @@ header {
     background-color: var(--blue);
 }
 
-header .contenitore {
-    display: flex;
-    justify-content: space-between;
+header .flex {
+    flex-wrap: nowrap;
 }
 
 .visibility {
@@ -75,28 +76,20 @@ header .contenitore {
     padding-bottom: 6.5rem;
 }
 
-#demo.flex {
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 #demo.contenitore {
     gap: var(--spaziatura) 0;
 }
 
 #demo .box {
     background-color: var(--lightblue);
-}
-
-.box {
     width: var(--larghezza);
 }
 
-.grande {
+#demo .box.grande {
     width: calc(var(--larghezza) * 2 + var(--spaziatura));
 }
 
-/*    Section demo */
+/* Section demo */
 
 /* ==========================
    Section Planning
@@ -108,6 +101,7 @@ header .contenitore {
 }
 
 #planning .flex {
+    flex-wrap: nowrap;
     align-items: flex-end;
 }
 
@@ -116,7 +110,7 @@ header .contenitore {
     width: 100%;
 }
 
-/*    Section Planning */
+/* Section Planning */
 
 /* ==========================
    Section Testimonials
@@ -141,7 +135,27 @@ header .contenitore {
     width: calc(100% - 16.5rem);
 }
 
-/*    Section Testimonials */
+/* Section Testimonials */
+
+/* ==========================
+   Section Features
+   ========================== */
+#features {
+    padding-top: 4.875rem;
+    padding-bottom: 4rem;
+    background-color: var(--viola);
+}
+
+#features .contenitore {
+    gap: 2rem 0;
+}
+
+#features .box {
+    background-color: white;
+    width: calc((100% - 4rem) / 3);
+}
+
+/* Section Features */
 
 /* Contenuto Principale */
 
@@ -181,10 +195,10 @@ header .contenitore {
         margin: 0;
     }
 
-    /*    Section Planning */
+    /* Section Planning */
     /* ==========================
-               Section Testimonials
-               ========================== */
+       Section Testimonials
+       ========================== */
     .row.flex {
         gap: 2rem;
     }
@@ -193,7 +207,16 @@ header .contenitore {
         width: calc(100% - 14.5rem);
     }
 
-    /*    Section Testimonials */
+    /* Section Testimonials */
+    /* ==========================
+       Section Features
+       ========================== */
+
+    #features .box {
+        width: calc((100% - 2rem) / 2);
+    }
+
+    /* Section Features */
     /* Contenuto Principale */
 }
 
@@ -220,8 +243,16 @@ header .contenitore {
         width: 100%;
     }
 
+    /* Section Testimonials */
+    /* ==========================
+       Section Features
+       ========================== */
 
-    /*    Section Testimonials */
+    #features .box {
+        width: 100%;
+    }
+
+    /* Section Features */
 }
 
 /* Stili per layout responsivi a diverse dimensioni dello schermo */
