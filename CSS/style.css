@@ -183,11 +183,29 @@ header .flex {
 
 /* Sezione About Us */
 
+/* ==========================
+   Sezione Get Started
+   ========================== */
+#get-started {
+    background-color: var(--viola);
+    text-align: center;
+    padding: 4.3125rem 0;
+}
+
+/* Sezione Get Started */
+
 /* Contenuto Principale */
 
 /* ==========================
    Footer
    ========================== */
+footer {
+    background-color: #333333;
+    text-align: center;
+    padding-top: 2.875rem;
+    padding-bottom: 2.625rem;
+}
+
 /* Footer */
 
 /* ==========================
