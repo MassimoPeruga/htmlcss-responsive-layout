@@ -105,9 +105,9 @@ header .flex {
     align-items: flex-end;
 }
 
-.colonna {
+#planning .colonna {
     margin: 0 2rem;
-    width: 100%;
+    width: calc(100% - 8rem);
 }
 
 /* Section Planning */
@@ -124,7 +124,7 @@ header .flex {
     background-color: var(--viola);
     margin: 2rem 0;
     padding: 1.875rem 1rem;
-    gap: 4rem;
+    gap: 2vw;
 }
 
 .col-left {
@@ -132,7 +132,7 @@ header .flex {
 }
 
 .col-right {
-    width: calc(100% - 16.5rem);
+    width: calc(100% - 12.5rem - 2vw);
 }
 
 /* Section Testimonials */
@@ -156,6 +156,32 @@ header .flex {
 }
 
 /* Section Features */
+
+/* ==========================
+   Sezione About Us
+   ========================== */
+#about-us {
+    padding-top: 6rem;
+    padding-bottom: 9.75rem;
+}
+
+#about-us .flex {
+    flex-wrap: nowrap;
+}
+
+#about-us .colonna {
+    margin: 0 1.5vw;
+}
+
+#about-us .colonna.sinistra {
+    flex: 2;
+}
+
+#about-us .colonna.destra {
+    flex: 1;
+}
+
+/* Sezione About Us */
 
 /* Contenuto Principale */
 
@@ -189,25 +215,16 @@ header .flex {
        ========================== */
     #planning .flex {
         flex-wrap: wrap;
+        gap: 2.25rem 0;
     }
 
     #planning .colonna {
         margin: 0;
+        width: 100%;
     }
 
     /* Section Planning */
-    /* ==========================
-       Section Testimonials
-       ========================== */
-    .row.flex {
-        gap: 2rem;
-    }
 
-    .col-right {
-        width: calc(100% - 14.5rem);
-    }
-
-    /* Section Testimonials */
     /* ==========================
        Section Features
        ========================== */
@@ -225,7 +242,7 @@ header .flex {
     /* ==========================
        Section demo
        ========================== */
-    .box {
+    #demo.contenitore .box {
         width: 100%;
     }
 
@@ -253,6 +270,22 @@ header .flex {
     }
 
     /* Section Features */
+
+    /* ==========================
+       Sezione About Us
+       ========================== */
+
+    #about-us .flex {
+        flex-direction: column;
+        gap: 3.625rem;
+    }
+
+    #about-us .colonna {
+        margin: 0;
+        width: 100%;
+    }
+
+    /* Sezione About Us */
 }
 
 /* Stili per layout responsivi a diverse dimensioni dello schermo */
