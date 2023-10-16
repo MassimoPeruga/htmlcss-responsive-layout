@@ -1,5 +1,137 @@
+/* ==========================
+   Reset e Normalizzazione
+   ========================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Reset e normalizzazione */
+
+/* ==========================
+   Commenti di Debugging
+   ========================== */
+.debug {
+    background-color: greenyellow;
+    height: 50px;
+    border: 1px solid black;
+}
+
+/* Commenti utilizzati temporaneamente per il debug */
+
+/* ==========================
+   Utility
+   ========================== */
+:root {
+    --blue: #0084fd;
+    --lightblue: #b5ddff;
+    --spaziatura: 1.5625rem;
+    --spaziatura-grande: calc(var(--spaziatura) * 2);
+    --larghezza: calc((100% - var(--spaziatura-grande)) / 3);
+}
+
+.contenitore {
+    width: 100%;
+    max-width: calc(1140px + var(--spaziatura) * 2);
+    padding: 0 var(--spaziatura);
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Utility */
+
+/* ==========================
+   Header
+   ========================== */
+header {
+    background-color: var(--blue);
+}
+
+header .contenitore {
+    display: flex;
+    justify-content: space-between;
+}
+
+.visibility {
+    display: none;
+}
+
+/* Header */
+
+/* ==========================
+   Contenuto Principale
+   ========================== */
+/* ==========================
+   Section demo
+   ========================== */
+
+#demo {
+    padding-top: var(--spaziatura-grande);
+    padding-bottom: 6.5rem;
+}
+
+#demo.flex {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#demo.contenitore {
+    gap: var(--spaziatura) 0;
+}
+
+#demo .box {
+    background-color: var(--lightblue);
+}
+
+.box {
+    width: var(--larghezza);
+}
+
+.grande {
+    width: calc(var(--larghezza) * 2 + var(--spaziatura));
+}
+
+/*    Section demo */
+/* Contenuto Principale */
+
+/* ==========================
+   Footer
+   ========================== */
+/* Footer */
+
+/* ==========================
+   Media Queries
+   ========================== */
+@media screen and (max-width: 768px) {
+
+    /* ==========================
+       Header
+       ========================== */
+    .visibility {
+        display: block;
+    }
+
+    .link {
+        display: none;
+    }
+
+    /* Header */
+}
+
+@media screen and (max-width: 425px) {
+
+    /* ==========================
+       Section demo
+       ========================== */
+    .box {
+        width: 100%;
+    }
+
+    /* Section demo */
+}
+
+/* Stili per layout responsivi a diverse dimensioni dello schermo */
