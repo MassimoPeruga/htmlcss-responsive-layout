@@ -35,6 +35,10 @@ img {
     width: 100%;
 }
 
+h2 {
+    font-size: 4.5rem;
+}
+
 h3 {
     font-size: 3rem;
 }
@@ -358,6 +362,8 @@ header li button a {
     padding-top: 4.875rem;
     padding-bottom: 4rem;
     background-color: var(--viola);
+    text-align: center;
+    color: #818181;
 }
 
 #features .contenitore {
@@ -367,6 +373,31 @@ header li button a {
 #features .box {
     background-color: white;
     width: calc((100% - 4rem) / 3);
+    border-radius: 20px;
+    text-align: left;
+    padding: 32px;
+}
+
+#features h3 {
+    margin-bottom: 4.75rem;
+    color: white;
+}
+
+#features h2,
+#features h5 {
+    color: var(--viola);
+}
+
+#features h5 {
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+#features button {
+    background-color: var(--viola);
+    color: white;
+    margin-top: 2rem;
+    padding: .5rem 2rem;
 }
 
 /* Section Features */
