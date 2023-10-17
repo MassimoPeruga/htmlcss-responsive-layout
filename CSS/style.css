@@ -37,6 +37,7 @@ img {
 
 h2 {
     font-size: 4.5rem;
+    color: var(--viola);
 }
 
 h3 {
@@ -383,12 +384,8 @@ header li button a {
     color: white;
 }
 
-#features h2,
 #features h5 {
     color: var(--viola);
-}
-
-#features h5 {
     margin-top: 15px;
     margin-bottom: 40px;
 }
@@ -415,15 +412,55 @@ header li button a {
 }
 
 #about-us .colonna {
-    margin: 0 1.5vw;
+    margin: 0 3.125rem;
 }
 
 #about-us .colonna.sinistra {
     flex: 2;
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
 }
 
 #about-us .colonna.destra {
     flex: 1;
+    color: var(--viola);
+    position: relative;
+}
+
+#about-us p {
+    font-size: 1.25rem;
+    line-height: 2;
+}
+
+#about-us img {
+    height: 100%;
+    width: auto;
+}
+
+#about-us .col-left {
+    width: 15.375rem;
+    height: 15.375rem;
+}
+
+#about-us .col-left i {
+    position: absolute;
+    top: 0;
+    left: 11.25rem;
+    font-size: 5.5rem;
+}
+
+#about-us h5 {
+    font-size: 1.875rem;
+    line-height: 1.5;
+    margin: 2rem 0;
+}
+
+#about-us button {
+    background-color: var(--viola);
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 25px;
 }
 
 /* Sezione About Us */
@@ -517,6 +554,17 @@ footer {
     }
 
     /* Section Features */
+
+    /* ==========================
+       Section About Us
+       ========================== */
+    #about-us .col-left {
+        width: 14.5rem;
+        height: 14.5rem;
+    }
+
+    /* Section About Us */
+
     /* Contenuto Principale */
 }
 
@@ -571,6 +619,16 @@ footer {
     #about-us .colonna {
         margin: 0;
         width: 100%;
+    }
+
+    #about-us .col-left {
+        width: 11.25rem;
+        height: 11.25rem;
+    }
+
+    #about-us .col-left i {
+        left: 8.5rem;
+
     }
 
     /* Sezione About Us */
