@@ -35,6 +35,10 @@ img {
     width: 100%;
 }
 
+h4 {
+    font-size: 2.125rem;
+}
+
 h5 {
     font-size: 1.5rem;
 }
@@ -215,7 +219,6 @@ header li button a {
    ========================== */
 #planning {
     background-color: var(--viola);
-    padding-top: 8.4375rem;
     padding-bottom: 4.3125rem;
 }
 
@@ -227,6 +230,49 @@ header li button a {
 #planning .colonna {
     margin: 0 2rem;
     width: calc(100% - 8rem);
+}
+
+#planning1 {
+    color: white;
+}
+
+#planning1 img {
+    margin: 8.25rem 4.125rem;
+    width: calc(100% - 4.125rem * 2);
+}
+
+#planning1 h4 {
+    margin-bottom: 3.625rem;
+}
+
+#planning2 {
+    background-color: white;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#planning2 img {
+    width: 50%;
+    margin: 2rem auto;
+}
+
+#planning2 p {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 2rem auto;
+    width: 90%;
+}
+
+#planning2 button {
+    background-color: var(--viola);
+    border-radius: 50%;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 2rem;
 }
 
 /* Section Planning */
