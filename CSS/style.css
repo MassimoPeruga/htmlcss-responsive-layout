@@ -163,7 +163,7 @@ header li button a {
 }
 
 #phone img {
-    width: 12.3125rem;
+    max-width: 250px;
 }
 
 #demo .box h5 {
@@ -185,11 +185,15 @@ header li button a {
 
 .box button {
     background-color: var(--blue);
-    color: white;
     padding: 1rem 3rem;
     border-radius: 25px;
+}
+
+.box button a {
+    color: white;
     letter-spacing: .25rem;
     font-weight: bold;
+    text-decoration: none;
 }
 
 #demo .box button {
