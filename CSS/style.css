@@ -24,6 +24,11 @@ button {
     cursor: pointer;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
 /* Reset e normalizzazione */
 
 /* ==========================
@@ -133,6 +138,20 @@ header li button a {
 
 #demo .box.grande {
     width: calc(var(--larghezza) * 2 + var(--spaziatura));
+}
+
+.box.grande .colonna {
+    width: 50%;
+}
+
+#phone {
+    display: flex;
+    justify-content: center;
+    padding-top: 4.4375rem;
+}
+
+#phone img {
+    width: 12.3125rem;
 }
 
 /* Section demo */
@@ -275,6 +294,22 @@ footer {
     /* ==========================
        Contenuto Principale
        ========================== */
+
+    /* ==========================
+       Section demo
+       ========================== */
+    .box.grande .colonna {
+        width: 100%;
+    }
+
+    #phone {
+        justify-content: flex-end;
+        margin-right: 50%;
+        padding-top: 2.4375rem;
+    }
+
+    /* Section demo */
+
     /* ==========================
        Section Planning
        ========================== */
@@ -309,6 +344,11 @@ footer {
        ========================== */
     #demo.contenitore .box {
         width: 100%;
+    }
+
+    #phone {
+        justify-content: center;
+        margin-right: 0;
     }
 
     /* Section demo */
