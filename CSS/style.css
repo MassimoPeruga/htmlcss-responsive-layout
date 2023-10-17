@@ -519,6 +519,19 @@ footer {
     text-align: center;
     padding-top: 2.875rem;
     padding-bottom: 2.625rem;
+    color: white;
+}
+
+footer .contenitore {
+    max-width: 35rem;
+}
+
+footer .contenitore div {
+    margin-top: 4.25rem;
+}
+
+footer a {
+    color: var(--viola);
 }
 
 /* Footer */
