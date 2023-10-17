@@ -35,12 +35,21 @@ img {
     width: 100%;
 }
 
+h3 {
+    font-size: 3rem;
+}
+
 h4 {
     font-size: 2.125rem;
 }
 
 h5 {
     font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+    font-weight: lighter;
 }
 
 /* Reset e normalizzazione */
@@ -283,6 +292,7 @@ header li button a {
 #testimonials {
     padding-top: 5.3125rem;
     padding-bottom: 5rem;
+    text-align: center;
 }
 
 .row {
@@ -290,14 +300,53 @@ header li button a {
     margin: 2rem 0;
     padding: 1.875rem 1rem;
     gap: 2vw;
+    color: white;
+    text-align: left;
+    border-radius: 50px;
 }
 
 .col-left {
     width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .col-right {
     width: calc(100% - 12.5rem - 2vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2vw;
+    gap: 2rem;
+}
+
+#testimonials h3 {
+    color: var(--viola);
+    margin: 3rem 0;
+}
+
+#testimonials p {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1.375rem;
+}
+
+#testimonials img {
+    height: 100%;
+    width: auto;
+}
+
+#testimonials .col-right p {
+    width: 100%;
+    margin: 0;
+}
+
+#testimonials .col-right i {
+    font-size: 20px;
 }
 
 /* Section Testimonials */
