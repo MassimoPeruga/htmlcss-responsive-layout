@@ -7,17 +7,34 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
 /* Reset e normalizzazione */
 
 /* ==========================
    Commenti di Debugging
    ========================== */
-.debug {
+/*.debug {
     background-color: greenyellow;
     height: 100px;
     border: 1px solid black;
 }
-
+*/
 /* Commenti utilizzati temporaneamente per il debug */
 
 /* ==========================
@@ -52,14 +69,43 @@
    ========================== */
 header {
     background-color: var(--blue);
+    padding-top: 1rem;
+    padding-bottom: 1.3125rem;
 }
 
 header .flex {
     flex-wrap: nowrap;
 }
 
+#logo {
+    width: 5rem;
+}
+
+.link {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header li button {
+    background-color: white;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+}
+
+header li button a {
+    color: black;
+}
+
 .visibility {
     display: none;
+    color: white;
+    font-size: 1.5rem;
 }
 
 /* Header */
@@ -217,7 +263,8 @@ footer {
        Header
        ========================== */
     .visibility {
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     .link {
