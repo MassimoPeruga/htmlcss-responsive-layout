@@ -146,10 +146,12 @@ header li button a {
     width: var(--larghezza);
     padding: 0 1.625rem;
     border-radius: 20px;
+    text-align: center;
 }
 
 #demo .box.grande {
     width: calc(var(--larghezza) * 2 + var(--spaziatura));
+    text-align: left;
 }
 
 .box.grande .colonna {
@@ -198,6 +200,12 @@ header li button a {
 
 #demo .box button {
     margin-bottom: 3.625rem;
+}
+
+#demo .box .icon {
+    color: var(--blue);
+    font-size: 5.0625rem;
+    margin-top: 2rem;
 }
 
 /* Section demo */
