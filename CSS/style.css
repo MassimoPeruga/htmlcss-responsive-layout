@@ -472,6 +472,39 @@ header li button a {
     background-color: var(--viola);
     text-align: center;
     padding: 4.3125rem 0;
+    color: white;
+}
+
+#get-started h6 {
+    color: #d5d4f4;
+    margin-bottom: 2.8125rem;
+}
+
+#get-started h2 {
+    color: #fdc15f;
+    font-size: 6rem;
+    margin: 3.5625rem 0;
+}
+
+#get-started p {
+    font-size: 1.25rem;
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+#get-started button {
+    background-color: white;
+    color: var(--viola);
+    margin: 2.25rem 0;
+    padding: 2rem 5.25rem;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 1.25rem;
+    letter-spacing: .125rem;
+}
+
+#get-started a {
+    color: inherit;
 }
 
 /* Sezione Get Started */
